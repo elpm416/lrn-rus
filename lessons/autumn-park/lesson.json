@@ -1,0 +1,82 @@
+{
+  "$schema": "../lesson.schema.json",
+  "id": "autumn-park",
+  "title": { "ru": "Осень в парке", "en": "Autumn in the park" },
+  "icon": "leaf",
+  "color": "orange",
+  "images": {
+    "park": { "file": "park.svg", "alt": "Dad and child walking along a path in an autumn park" },
+    "leaves": { "file": "leaf-pile.svg", "alt": "Child jumping into a big pile of autumn leaves" },
+    "squirrel": { "file": "squirrel.svg", "alt": "A squirrel holding a nut under a tree" }
+  },
+  "sentences": [
+    { "text": "На|сту|пи|ла о|сень.", "en": "Autumn has come.", "image": "park" },
+    { "text": "Мы с па|пой и|дём в парк.", "en": "Dad and I are going to the park.", "image": "park" },
+    { "text": "Ве|зде жёл|ты|е и крас|ны|е ли|стья.", "en": "There are yellow and red leaves everywhere.", "image": "park" },
+    { "text": "Бел|ка со|би|ра|ет о|ре|хи.", "en": "A squirrel is collecting nuts.", "image": "squirrel" },
+    { "text": "Я пры|га|ю в боль|шу|ю ку|чу ли|стьев.", "en": "I jump into a big pile of leaves.", "image": "leaves" },
+    { "text": "Как ве|се|ло!", "en": "What fun!", "image": "leaves" }
+  ],
+  "words": {
+    "наступила": "has come",
+    "осень": "autumn",
+    "мы": "we",
+    "с": "with",
+    "папой": "with dad",
+    "идём": "are going",
+    "в": "to, into",
+    "парк": "park",
+    "везде": "everywhere",
+    "жёлтые": "yellow",
+    "и": "and",
+    "красные": "red",
+    "листья": "leaves",
+    "белка": "squirrel",
+    "собирает": "is collecting",
+    "орехи": "nuts",
+    "я": "I",
+    "прыгаю": "I jump",
+    "большую": "big",
+    "кучу": "pile",
+    "листьев": "of leaves",
+    "как": "how",
+    "весело": "fun"
+  },
+  "quiz": [
+    {
+      "type": "choice",
+      "prompt": { "ru": "Что собирает белка?", "en": "What is the squirrel collecting?" },
+      "options": [
+        { "text": "листья", "image": "opt-leaves.svg" },
+        { "text": "орехи", "image": "opt-nuts.svg" },
+        { "text": "грибы", "image": "opt-mushrooms.svg" },
+        { "text": "яблоки", "image": "opt-apples.svg" }
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": { "ru": "С кем мы идём в парк?", "en": "Who are we going to the park with?" },
+      "options": [{ "text": "с мамой" }, { "text": "с папой" }, { "text": "с бабушкой" }],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": { "ru": "Какие листья в парке?", "en": "What colour are the leaves in the park?" },
+      "options": [{ "text": "зелёные и синие" }, { "text": "жёлтые и красные" }, { "text": "белые и чёрные" }],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": { "ru": "Куда я прыгаю?", "en": "Where do I jump?" },
+      "options": [{ "text": "в лужу" }, { "text": "в кучу листьев" }, { "text": "в снег" }],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": { "ru": "Какое сейчас время года?", "en": "What season is it?" },
+      "options": [{ "text": "зима" }, { "text": "осень" }, { "text": "лето" }],
+      "answer": 1
+    }
+  ]
+}
