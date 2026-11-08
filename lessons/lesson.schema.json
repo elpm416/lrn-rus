@@ -14,7 +14,7 @@
     "title": { "$ref": "#/$defs/ruEn" },
     "icon": {
       "description": "Built-in icon shown on the lesson card.",
-      "enum": ["leaf", "house", "pot", "paw", "snowflake", "sun", "star", "book"]
+      "enum": ["leaf", "house", "pot", "paw", "snowflake", "sun", "star", "book", "calendar", "ball"]
     },
     "color": {
       "description": "Card colour.",

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360">
+<rect width="480" height="360" fill="#E6EEF7"/>
+<rect y="300" width="480" height="60" fill="#D9B98C"/>
+<rect x="330" y="40" width="110" height="100" fill="#D6E9F5" stroke="#fff" stroke-width="8"/>
+<line x1="385" y1="40" x2="385" y2="140" stroke="#fff" stroke-width="6"/>
+<circle cx="412" cy="70" r="14" fill="#F7D774"/>
+<path d="M96 236 L96 150 L140 120" stroke="#3E4859" stroke-width="6" fill="none" stroke-linecap="round"/>
+<path d="M122 108 L170 108 L160 140 L132 140Z" fill="#F2B33D"/>
+<ellipse cx="96" cy="238" rx="22" ry="6" fill="#3E4859"/>
+<rect x="166" y="200" width="44" height="46" rx="15" fill="#E8742A"/>
+<circle cx="188" cy="176" r="23" fill="#6B4423"/>
+<circle cx="188" cy="182" r="19" fill="#F2C9A0"/>
+<path d="M180 184 Q182 182 184 184" stroke="#1E2433" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+<path d="M192 184 Q194 182 196 184" stroke="#1E2433" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+<path d="M183 191 Q188 194 193 191" stroke="#1E2433" stroke-width="2" fill="none" stroke-linecap="round"/>
+<rect x="290" y="206" width="40" height="40" rx="14" fill="#5B9E5F"/>
+<circle cx="310" cy="184" r="21" fill="#E3B04B"/>
+<circle cx="310" cy="189" r="17" fill="#F2C9A0"/>
+<path d="M303 191 Q305 189 307 191" stroke="#1E2433" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M313 191 Q315 189 317 191" stroke="#1E2433" stroke-width="2" fill="none" stroke-linecap="round"/>
+<rect x="60" y="240" width="360" height="16" rx="4" fill="#B07A44"/>
+<rect x="80" y="256" width="12" height="60" fill="#8B5A2B"/>
+<rect x="388" y="256" width="12" height="60" fill="#8B5A2B"/>
+<path d="M160 240 L176 226 L222 226 L208 240Z" fill="#fff" stroke="#C9D2E1" stroke-width="2"/>
+<line x1="180" y1="232" x2="210" y2="232" stroke="#9FB3D1" stroke-width="2"/>
+<path d="M206 236 L224 214" stroke="#F2B33D" stroke-width="5" stroke-linecap="round"/>
+<path d="M210 236 L200 214" stroke="#E8742A" stroke-width="9" stroke-linecap="round"/>
+<path d="M282 240 L298 226 L344 226 L330 240Z" fill="#fff" stroke="#C9D2E1" stroke-width="2"/>
+<line x1="302" y1="232" x2="332" y2="232" stroke="#9FB3D1" stroke-width="2"/>
+<path d="M326 238 L342 216" stroke="#2B4C9B" stroke-width="5" stroke-linecap="round"/>
+<rect x="360" y="222" width="34" height="18" rx="2" fill="#C8432B"/>
+<rect x="364" y="210" width="30" height="12" rx="2" fill="#2B4C9B"/>
+</svg>
