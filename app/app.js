@@ -133,7 +133,7 @@
     lesson: null,
     step: 'listen',
     cur: 0, word: -1, playing: false, voiceMenu: false,
-    syl: false, en: false, popup: null,
+    syl: false, en: false, popup: null, confirmReset: null,
     q: 0, picked: null, firstTry: [], order: []
   };
   const progress = (id) => store.get('progress:' + id, {});
@@ -154,9 +154,15 @@
       const chips = started
         ? '<div class="chips">' + ['listen', 'read', 'quiz'].map((k) => '<span class="chip' + (p[k] ? ' done' : '') + '">' + (p[k] ? '✓ ' : '') + k[0].toUpperCase() + k.slice(1) + '</span>').join('') + '</div>'
         : '<span class="muted" style="font-weight:700">Not started</span>';
-      return '<a class="lesson-card" href="#' + esc(l.id) + '">' +
+      const reset = started
+        ? (S.confirmReset === l.id
+          ? '<div class="reset-confirm" role="dialog" aria-label="Reset progress"><strong>Start this lesson over?</strong><span class="muted">Its progress will be cleared.</span>' +
+            '<div class="reset-actions"><button class="pill" data-act="reset-no">Cancel</button><button class="pill danger" data-act="reset-yes" data-id="' + esc(l.id) + '">Reset</button></div></div>'
+          : '<button class="reset-btn" data-act="reset-ask" data-id="' + esc(l.id) + '" aria-label="Reset progress for ' + esc(l.title.en) + '" title="Reset progress">' + icon('replay', 22, 2.4) + '</button>')
+        : '';
+      return '<div class="card-wrap"><a class="lesson-card" href="#' + esc(l.id) + '">' +
         '<div class="tile" style="background:' + c[0] + ';color:' + c[1] + '">' + icon(l.icon, 84, 1.8) + '</div>' +
-        '<div class="body"><div><div class="ru">' + esc(l.title.ru) + '</div><div class="en">' + esc(l.title.en) + '</div></div>' + chips + '</div></a>';
+        '<div class="body"><div><div class="ru">' + esc(l.title.ru) + '</div><div class="en">' + esc(l.title.en) + '</div></div>' + chips + '</div></a>' + reset + '</div>';
     }).join('');
     return '<div class="home"><header class="home-head"><div class="brand"><div class="brand-mark" aria-hidden="true">Аб</div><div><h1>Учим русский</h1><p>Pick a lesson to start</p></div></div></header>' +
       voiceBanner() + '<div class="grid">' + cards + '</div></div>';
@@ -363,6 +369,9 @@
     const act = el.dataset.act;
     const l = S.lesson;
     switch (act) {
+      case 'reset-ask': S.confirmReset = el.dataset.id; render(); break;
+      case 'reset-no': S.confirmReset = null; render(); break;
+      case 'reset-yes': store.set('progress:' + el.dataset.id, {}); S.confirmReset = null; render(); break;
       case 'home': e.preventDefault(); location.hash = ''; if (!location.hash) route(); break;
       case 'step': if (el.dataset.mark) mark(el.dataset.mark); goStep(el.dataset.step); break;
       case 'play':
@@ -416,7 +425,11 @@
   $app.addEventListener('input', (e) => {
     if (e.target.dataset.act === 'rate') { tts.rate = +e.target.value; store.set('rate', tts.rate); }
   });
-  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && S.popup) { S.popup = null; render(); } });
+  document.addEventListener('keydown', (e) => {
+    if (e.key !== 'Escape') return;
+    if (S.popup) { S.popup = null; render(); }
+    else if (S.confirmReset) { S.confirmReset = null; render(); }
+  });
   window.addEventListener('hashchange', route);
 
   // ---------- start ----------
