@@ -131,7 +131,7 @@
     lesson: null,
     step: 'listen',
     cur: 0, word: -1, playing: false, voiceMenu: false,
-    syl: true, en: false, popup: null,
+    syl: false, en: false, popup: null,
     q: 0, picked: null, firstTry: [], order: []
   };
   const progress = (id) => store.get('progress:' + id, {});
