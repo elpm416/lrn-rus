@@ -1,0 +1,173 @@
+{
+  "$schema": "../lesson.schema.json",
+  "id": "guests",
+  "title": {
+    "ru": "Гости",
+    "en": "Guests"
+  },
+  "icon": "star",
+  "color": "purple",
+  "images": {
+    "arrive": {
+      "file": "arrive.svg",
+      "alt": "Two friends waving at the open front door, the brothers waving back"
+    },
+    "play": {
+      "file": "play.svg",
+      "alt": "Four kids playing together with building blocks"
+    },
+    "table": {
+      "file": "table.svg",
+      "alt": "Four kids at a table with pie, pancakes and fruit"
+    }
+  },
+  "sentences": [
+    {
+      "text": "К нам в гос|ти при|шли дру|зья.",
+      "en": "Our friends came to visit us.",
+      "image": "arrive"
+    },
+    {
+      "text": "Я и мой брат и|гра|ли вме|сте с ни|ми.",
+      "en": "My brother and I played together with them.",
+      "image": "play"
+    },
+    {
+      "text": "По|том мы все вме|сте е|ли вкус|ну|ю е|ду.",
+      "en": "Then we all ate yummy food together.",
+      "image": "table"
+    },
+    {
+      "text": "Мне бы|ло о|чень ве|се|ло!",
+      "en": "I had so much fun!",
+      "image": "table"
+    }
+  ],
+  "words": {
+    "к": "to",
+    "нам": "us",
+    "в": "to, in",
+    "гости": "a visit (в гости = to visit)",
+    "пришли": "came",
+    "друзья": "friends",
+    "я": "I",
+    "и": "and",
+    "мой": "my",
+    "брат": "brother",
+    "играли": "played",
+    "вместе": "together",
+    "с": "with",
+    "ними": "them",
+    "потом": "then",
+    "мы": "we",
+    "все": "all",
+    "ели": "ate",
+    "вкусную": "yummy, tasty",
+    "еду": "food",
+    "мне": "to me",
+    "было": "was",
+    "очень": "very",
+    "весело": "fun"
+  },
+  "quiz": [
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Кто пришёл к нам в гости?",
+        "en": "Who came to visit us?"
+      },
+      "options": [
+        {
+          "text": "друзья",
+          "image": "opt-friends.svg"
+        },
+        {
+          "text": "бабушка",
+          "image": "opt-grandma.svg"
+        },
+        {
+          "text": "кошка",
+          "image": "opt-cat.svg"
+        },
+        {
+          "text": "собака",
+          "image": "opt-dog.svg"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "С кем играли я и мой брат?",
+        "en": "Who did my brother and I play with?"
+      },
+      "options": [
+        {
+          "text": "с друзьями"
+        },
+        {
+          "text": "с кошкой"
+        },
+        {
+          "text": "с папой"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Что мы ели?",
+        "en": "What did we eat?"
+      },
+      "options": [
+        {
+          "text": "вкусную еду"
+        },
+        {
+          "text": "снег"
+        },
+        {
+          "text": "песок"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Мы ели вместе или одни?",
+        "en": "Did we eat together or alone?"
+      },
+      "options": [
+        {
+          "text": "вместе"
+        },
+        {
+          "text": "одни"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Как мне было?",
+        "en": "How did I feel?"
+      },
+      "options": [
+        {
+          "text": "весело"
+        },
+        {
+          "text": "скучно"
+        },
+        {
+          "text": "грустно"
+        }
+      ],
+      "answer": 0
+    }
+  ]
+}
