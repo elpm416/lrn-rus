@@ -1,83 +1,209 @@
 {
   "$schema": "../lesson.schema.json",
   "id": "weekend",
-  "title": { "ru": "Наши выходные", "en": "Our weekend" },
+  "title": {
+    "ru": "Наши выходные",
+    "en": "Our weekend"
+  },
   "icon": "calendar",
   "color": "blue",
   "images": {
-    "school": { "file": "school.svg", "alt": "Two kids at a desk in a Russian school class, one raising a hand" },
-    "homework": { "file": "homework.svg", "alt": "Two kids doing homework at a table under a lamp" },
-    "skating": { "file": "skating.svg", "alt": "Two kids ice skating on an outdoor rink" },
-    "soccer": { "file": "soccer.svg", "alt": "Two kids playing soccer, one kicking the ball" },
-    "exercise": { "file": "exercise.svg", "alt": "Dad and two kids lifting weights at home" }
+    "school": {
+      "file": "school.svg",
+      "alt": "Two kids at a desk in a Russian school class, one raising a hand"
+    },
+    "lunch": {
+      "file": "lunch.svg",
+      "alt": "Grandpa, grandma and two kids eating soup at the table"
+    },
+    "skating": {
+      "file": "skating.svg",
+      "alt": "Mom, Dad and two kids ice skating together, holding hands"
+    },
+    "homework": {
+      "file": "homework.svg",
+      "alt": "Two kids doing homework at a table under a lamp"
+    },
+    "exercise": {
+      "file": "exercise.svg",
+      "alt": "Dad and two kids lifting weights at home"
+    },
+    "soccer": {
+      "file": "soccer.svg",
+      "alt": "Two kids playing soccer, one kicking the ball"
+    }
   },
   "sentences": [
-    { "text": "В суб|бо|ту мы и|дём в рус|ску|ю шко|лу.", "en": "On Saturday we go to Russian school.", "image": "school" },
-    { "text": "По|том мы де|ла|ем у|ро|ки.", "en": "Then we do our homework.", "image": "homework" },
-    { "text": "В вос|кре|се|нье мы ка|та|ем|ся на конь|ках.", "en": "On Sunday we go ice skating.", "image": "skating" },
-    { "text": "Днём мы и|гра|ем в фут|бол.", "en": "In the afternoon we play soccer.", "image": "soccer" },
-    { "text": "До|ма мы с па|пой де|ла|ем за|ряд|ку.", "en": "At home we exercise with Dad.", "image": "exercise" },
-    { "text": "Мы силь|ны|е, как па|па!", "en": "We are strong, like Dad!", "image": "exercise" }
+    {
+      "text": "В суб|бо|ту у|тром мы и|дём в рус|ску|ю шко|лу.",
+      "en": "On Saturday morning we go to Russian school.",
+      "image": "school"
+    },
+    {
+      "text": "По|том мы о|бе|да|ем у ба|буш|ки и де|душ|ки.",
+      "en": "Then we have lunch at Grandma and Grandpa's.",
+      "image": "lunch"
+    },
+    {
+      "text": "Ве|че|ром мы с ма|мой и па|пой ка|та|ем|ся на конь|ках.",
+      "en": "In the evening we go ice skating with Mom and Dad.",
+      "image": "skating"
+    },
+    {
+      "text": "В вос|кре|се|нье мы де|ла|ем у|ро|ки.",
+      "en": "On Sunday we do our homework.",
+      "image": "homework"
+    },
+    {
+      "text": "По|том мы с па|пой тре|ни|ру|ем|ся до|ма.",
+      "en": "Then we train at home with Dad.",
+      "image": "exercise"
+    },
+    {
+      "text": "Мы хо|тим быть силь|ны|ми!",
+      "en": "We want to be strong!",
+      "image": "exercise"
+    },
+    {
+      "text": "А по|том мы и|гра|ем в фут|бол.",
+      "en": "And then we play soccer.",
+      "image": "soccer"
+    }
   ],
   "words": {
     "в": "on, to",
     "субботу": "on Saturday",
+    "утром": "in the morning",
     "мы": "we",
     "идём": "are going",
     "русскую": "Russian",
     "школу": "school",
     "потом": "then",
-    "делаем": "we do",
-    "уроки": "homework, lessons",
-    "воскресенье": "Sunday",
+    "обедаем": "we have lunch",
+    "у": "at (someone's home)",
+    "бабушки": "grandma's",
+    "и": "and",
+    "дедушки": "grandpa's",
+    "вечером": "in the evening",
+    "с": "with",
+    "мамой": "with mom",
+    "папой": "with dad",
     "катаемся": "we ride, we skate",
     "на": "on",
     "коньках": "skates",
-    "днём": "in the afternoon",
-    "играем": "we play",
-    "футбол": "soccer",
+    "воскресенье": "Sunday",
+    "делаем": "we do",
+    "уроки": "homework, lessons",
+    "тренируемся": "we train",
     "дома": "at home",
-    "с": "with",
-    "папой": "with dad",
-    "зарядку": "exercises",
-    "сильные": "strong",
-    "как": "like",
-    "папа": "dad"
+    "хотим": "we want",
+    "быть": "to be",
+    "сильными": "strong",
+    "а": "and",
+    "играем": "we play",
+    "футбол": "soccer"
   },
   "quiz": [
     {
       "type": "choice",
-      "prompt": { "ru": "Во что мы играем днём?", "en": "What do we play in the afternoon?" },
+      "prompt": {
+        "ru": "Во что мы играем в воскресенье?",
+        "en": "What do we play on Sunday?"
+      },
       "options": [
-        { "text": "в футбол", "image": "opt-soccer.svg" },
-        { "text": "в хоккей", "image": "opt-hockey.svg" },
-        { "text": "в теннис", "image": "opt-tennis.svg" },
-        { "text": "в баскетбол", "image": "opt-basketball.svg" }
+        {
+          "text": "в футбол",
+          "image": "opt-soccer.svg"
+        },
+        {
+          "text": "в хоккей",
+          "image": "opt-hockey.svg"
+        },
+        {
+          "text": "в теннис",
+          "image": "opt-tennis.svg"
+        },
+        {
+          "text": "в баскетбол",
+          "image": "opt-basketball.svg"
+        }
       ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": { "ru": "Куда мы идём в субботу?", "en": "Where do we go on Saturday?" },
-      "options": [{ "text": "в зоопарк" }, { "text": "в русскую школу" }, { "text": "в магазин" }],
-      "answer": 1
+      "prompt": {
+        "ru": "Куда мы идём в субботу утром?",
+        "en": "Where do we go on Saturday morning?"
+      },
+      "options": [
+        {
+          "text": "в русскую школу"
+        },
+        {
+          "text": "в зоопарк"
+        },
+        {
+          "text": "в магазин"
+        }
+      ],
+      "answer": 0
     },
     {
       "type": "choice",
-      "prompt": { "ru": "Что мы делаем после школы?", "en": "What do we do after school?" },
-      "options": [{ "text": "спим" }, { "text": "смотрим мультики" }, { "text": "делаем уроки" }],
-      "answer": 2
+      "prompt": {
+        "ru": "Где мы обедаем в субботу?",
+        "en": "Where do we have lunch on Saturday?"
+      },
+      "options": [
+        {
+          "text": "у бабушки и дедушки"
+        },
+        {
+          "text": "в школе"
+        },
+        {
+          "text": "в кафе"
+        }
+      ],
+      "answer": 0
     },
     {
       "type": "choice",
-      "prompt": { "ru": "Когда мы катаемся на коньках?", "en": "When do we go ice skating?" },
-      "options": [{ "text": "в субботу" }, { "text": "в воскресенье" }, { "text": "в понедельник" }],
-      "answer": 1
+      "prompt": {
+        "ru": "С кем мы катаемся на коньках?",
+        "en": "Who do we go skating with?"
+      },
+      "options": [
+        {
+          "text": "с мамой и папой"
+        },
+        {
+          "text": "с бабушкой"
+        },
+        {
+          "text": "с друзьями"
+        }
+      ],
+      "answer": 0
     },
     {
       "type": "choice",
-      "prompt": { "ru": "С кем мы делаем зарядку?", "en": "Who do we exercise with?" },
-      "options": [{ "text": "с папой" }, { "text": "с бабушкой" }, { "text": "с собакой" }],
+      "prompt": {
+        "ru": "Почему мы тренируемся с папой?",
+        "en": "Why do we train with Dad?"
+      },
+      "options": [
+        {
+          "text": "мы хотим быть сильными"
+        },
+        {
+          "text": "мы хотим спать"
+        },
+        {
+          "text": "мы хотим есть"
+        }
+      ],
       "answer": 0
     }
   ]

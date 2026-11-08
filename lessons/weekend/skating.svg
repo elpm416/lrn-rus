@@ -10,6 +10,29 @@
 <ellipse cx="240" cy="290" rx="220" ry="58" fill="#CFE7F3" stroke="#A9CFE3" stroke-width="4"/>
 <path d="M120 300 Q200 280 280 296" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" opacity=".8"/>
 <circle cx="130" cy="60" r="4" fill="#fff"/><circle cx="250" cy="40" r="3" fill="#fff"/><circle cx="350" cy="70" r="4" fill="#fff"/><circle cx="200" cy="110" r="3" fill="#fff"/><circle cx="320" cy="140" r="3" fill="#fff"/>
+<path d="M128 228 L162 226" stroke="#2B4C9B" stroke-width="9" stroke-linecap="round"/>
+<path d="M104 278 L96 312" stroke="#1E2433" stroke-width="10" stroke-linecap="round"/>
+<path d="M118 278 L128 310" stroke="#1E2433" stroke-width="10" stroke-linecap="round"/>
+<rect x="84" y="312" width="24" height="6" rx="3" fill="#8A94A6"/>
+<rect x="120" y="310" width="24" height="6" rx="3" fill="#8A94A6"/>
+<rect x="88" y="212" width="46" height="70" rx="17" fill="#2B4C9B"/>
+<rect x="90" y="210" width="42" height="10" rx="5" fill="#F2B33D"/>
+<circle cx="111" cy="190" r="17" fill="#F2C9A0"/>
+<path d="M92 186 A19 19 0 0 1 130 186Z" fill="#3E4859"/>
+<circle cx="105" cy="192" r="2.3" fill="#1E2433"/><circle cx="117" cy="192" r="2.3" fill="#1E2433"/>
+<path d="M105 199 Q111 204 117 199" stroke="#1E2433" stroke-width="2" fill="none" stroke-linecap="round"/>
+<path d="M362 230 L328 244" stroke="#7A3E8C" stroke-width="9" stroke-linecap="round"/>
+<path d="M374 280 L366 312" stroke="#1E2433" stroke-width="9" stroke-linecap="round"/>
+<path d="M388 280 L398 310" stroke="#1E2433" stroke-width="9" stroke-linecap="round"/>
+<rect x="354" y="312" width="24" height="6" rx="3" fill="#8A94A6"/>
+<rect x="390" y="310" width="24" height="6" rx="3" fill="#8A94A6"/>
+<path d="M362 186 Q360 222 368 228 L396 228 Q404 222 400 186Z" fill="#6B4423"/>
+<rect x="358" y="214" width="46" height="70" rx="17" fill="#7A3E8C"/>
+<circle cx="381" cy="194" r="17" fill="#F2C9A0"/>
+<path d="M362 190 A19 19 0 0 1 400 190Z" fill="#fff"/>
+<circle cx="381" cy="168" r="6" fill="#E8742A"/>
+<circle cx="375" cy="196" r="2.3" fill="#1E2433"/><circle cx="387" cy="196" r="2.3" fill="#1E2433"/>
+<path d="M375 203 Q381 208 387 203" stroke="#1E2433" stroke-width="2" fill="none" stroke-linecap="round"/>
 <path d="M176 238 L162 222" stroke="#E8742A" stroke-width="9" stroke-linecap="round"/>
 <path d="M214 238 L232 226" stroke="#E8742A" stroke-width="9" stroke-linecap="round"/>
 <path d="M188 268 L176 296" stroke="#1E2433" stroke-width="9" stroke-linecap="round"/>
