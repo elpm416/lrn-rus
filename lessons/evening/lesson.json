@@ -1,0 +1,195 @@
+{
+  "$schema": "../lesson.schema.json",
+  "id": "evening",
+  "title": {
+    "ru": "Мой вечер",
+    "en": "My evening"
+  },
+  "icon": "moon",
+  "color": "teal",
+  "images": {
+    "homework": {
+      "file": "homework.svg",
+      "alt": "A child doing homework at a desk under a lamp, sunset outside"
+    },
+    "dinner": {
+      "file": "dinner.svg",
+      "alt": "A child eating dinner at the table"
+    },
+    "judo": {
+      "file": "judo.svg",
+      "alt": "Two kids in white judo uniforms on the mat"
+    },
+    "snack": {
+      "file": "snack.svg",
+      "alt": "A child eating a sandwich in the kitchen at night"
+    },
+    "teeth": {
+      "file": "teeth.svg",
+      "alt": "A child brushing teeth at the bathroom sink"
+    },
+    "bed": {
+      "file": "bed.svg",
+      "alt": "A child asleep in bed, the moon in the window"
+    }
+  },
+  "sentences": [
+    {
+      "text": "Ве|че|ром я де|ла|ю у|ро|ки.",
+      "en": "In the evening I do my homework.",
+      "image": "homework"
+    },
+    {
+      "text": "По|том я у|жи|на|ю.",
+      "en": "Then I have dinner.",
+      "image": "dinner"
+    },
+    {
+      "text": "Пос|ле у|жи|на я и|ду на дзю|до.",
+      "en": "After dinner I go to judo.",
+      "image": "judo"
+    },
+    {
+      "text": "Я при|хо|жу до|мой и пе|ре|ку|сы|ва|ю.",
+      "en": "I come home and have a snack.",
+      "image": "snack"
+    },
+    {
+      "text": "Я чи|щу зу|бы и ло|жусь спать.",
+      "en": "I brush my teeth and go to bed.",
+      "image": "teeth"
+    },
+    {
+      "text": "Спо|кой|ной но|чи!",
+      "en": "Good night!",
+      "image": "bed"
+    }
+  ],
+  "words": {
+    "вечером": "in the evening",
+    "я": "I",
+    "делаю": "I do",
+    "уроки": "homework, lessons",
+    "потом": "then",
+    "ужинаю": "I have dinner",
+    "после": "after",
+    "ужина": "dinner",
+    "иду": "I go",
+    "на": "to",
+    "дзюдо": "judo",
+    "прихожу": "I come",
+    "домой": "home",
+    "и": "and",
+    "перекусываю": "I have a snack",
+    "чищу": "I brush",
+    "зубы": "teeth",
+    "ложусь": "I lie down",
+    "спать": "to sleep (ложусь спать = go to bed)",
+    "спокойной": "calm, peaceful",
+    "ночи": "night (Спокойной ночи = Good night)"
+  },
+  "quiz": [
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Куда я иду после ужина?",
+        "en": "Where do I go after dinner?"
+      },
+      "options": [
+        {
+          "text": "на дзюдо",
+          "image": "opt-judo.svg"
+        },
+        {
+          "text": "на футбол",
+          "image": "opt-soccer.svg"
+        },
+        {
+          "text": "в бассейн",
+          "image": "opt-pool.svg"
+        },
+        {
+          "text": "в магазин",
+          "image": "opt-shop.svg"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Что я делаю вечером сначала?",
+        "en": "What do I do first in the evening?"
+      },
+      "options": [
+        {
+          "text": "делаю уроки"
+        },
+        {
+          "text": "смотрю телевизор"
+        },
+        {
+          "text": "сплю"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Что я делаю, когда прихожу домой?",
+        "en": "What do I do when I come home?"
+      },
+      "options": [
+        {
+          "text": "перекусываю"
+        },
+        {
+          "text": "делаю уроки"
+        },
+        {
+          "text": "иду гулять"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Что я делаю перед сном?",
+        "en": "What do I do before bed?"
+      },
+      "options": [
+        {
+          "text": "чищу зубы"
+        },
+        {
+          "text": "играю в футбол"
+        },
+        {
+          "text": "ем торт"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Что говорят перед сном?",
+        "en": "What do people say before bed?"
+      },
+      "options": [
+        {
+          "text": "«Спокойной ночи!»"
+        },
+        {
+          "text": "«Доброе утро!»"
+        },
+        {
+          "text": "«Привет!»"
+        }
+      ],
+      "answer": 0
+    }
+  ]
+}
