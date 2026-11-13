@@ -61,6 +61,12 @@ img { display: block; }
 }
 .brand h1 { margin: 0; font-family: var(--display); font-size: 44px; line-height: 1.1; }
 .brand p { margin: 2px 0 0; font-size: 18px; color: var(--muted); }
+.home-section { display: flex; flex-direction: column; gap: 18px; }
+.home-section h2 { margin: 8px 0 0; display: flex; align-items: center; gap: 12px; font-family: var(--display); font-size: 26px; font-weight: 700; }
+.home-section h2 .count { display: inline-flex; align-items: center; justify-content: center; min-width: 34px; height: 30px; padding: 0 10px; border-radius: 999px; background: var(--chip); color: var(--ink-2); font-family: 'Nunito', sans-serif; font-size: 16px; font-weight: 800; }
+.lesson-card.is-done .tile { opacity: .75; }
+.mini-stars { display: inline-flex; align-items: center; font-size: 22px; letter-spacing: 2px; color: #F2B33D; }
+.mini-stars .off { color: #DCE2EC; }
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 28px; }
 .lesson-card {
   display: flex; flex-direction: column; overflow: hidden; border-radius: 28px; background: #fff;

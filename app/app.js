@@ -139,6 +139,7 @@
     q: 0, picked: null, firstTry: [], order: []
   };
   const progress = (id) => store.get('progress:' + id, {});
+  const starsFor = (good, total) => (good === total ? 3 : good >= Math.ceil(total / 2) ? 2 : 1);
   const mark = (step) => { const p = progress(S.lesson.id); p[step] = true; store.set('progress:' + S.lesson.id, p); };
 
   // ---------- views ----------
@@ -148,26 +149,45 @@
     return '<div class="banner">' + icon('alert') + '<strong>' + why + '</strong><span>Open this page in Microsoft Edge, or add Russian under Windows Settings › Time &amp; language › Speech.</span></div>';
   }
 
+  function lessonState(p) {
+    if (p.quiz) return 'done';
+    if (p.listen || p.read) return 'progress';
+    return 'todo';
+  }
+
+  function lessonCard(l) {
+    const c = COLORS[l.color] || COLORS.blue;
+    const p = progress(l.id);
+    const state = lessonState(p);
+    let status;
+    if (state === 'todo') status = '<span class="muted" style="font-weight:700">Not started</span>';
+    else if (state === 'done') status = '<div class="chips"><span class="chip done">✓ Done</span>' + (p.stars ? '<span class="mini-stars" aria-label="' + p.stars + ' of 3 stars">' + '★'.repeat(p.stars) + '<span class="off">' + '★'.repeat(3 - p.stars) + '</span></span>' : '') + '</div>';
+    else status = '<div class="chips">' + ['listen', 'read', 'quiz'].map((k) => '<span class="chip' + (p[k] ? ' done' : '') + '">' + (p[k] ? '✓ ' : '') + k[0].toUpperCase() + k.slice(1) + '</span>').join('') + '</div>';
+    const reset = state !== 'todo'
+      ? (S.confirmReset === l.id
+        ? '<div class="reset-confirm" role="dialog" aria-label="Reset progress"><strong>Start this lesson over?</strong><span class="muted">Its progress will be cleared.</span>' +
+          '<div class="reset-actions"><button class="pill" data-act="reset-no">Cancel</button><button class="pill danger" data-act="reset-yes" data-id="' + esc(l.id) + '">Reset</button></div></div>'
+        : '<button class="reset-btn" data-act="reset-ask" data-id="' + esc(l.id) + '" aria-label="Reset progress for ' + esc(l.title.en) + '" title="Reset progress">' + icon('replay', 22, 2.4) + '</button>')
+      : '';
+    return '<div class="card-wrap"><a class="lesson-card' + (state === 'done' ? ' is-done' : '') + '" href="#' + esc(l.id) + '">' +
+      '<div class="tile" style="background:' + c[0] + ';color:' + c[1] + '">' + icon(l.icon, 84, 1.8) + '</div>' +
+      '<div class="body"><div><div class="ru">' + esc(l.title.ru) + '</div><div class="en">' + esc(l.title.en) + '</div></div>' + status + '</div></a>' + reset + '</div>';
+  }
+
   function viewHome() {
-    const cards = S.lessons.map((l) => {
-      const c = COLORS[l.color] || COLORS.blue;
-      const p = progress(l.id);
-      const started = p.listen || p.read || p.quiz;
-      const chips = started
-        ? '<div class="chips">' + ['listen', 'read', 'quiz'].map((k) => '<span class="chip' + (p[k] ? ' done' : '') + '">' + (p[k] ? '✓ ' : '') + k[0].toUpperCase() + k.slice(1) + '</span>').join('') + '</div>'
-        : '<span class="muted" style="font-weight:700">Not started</span>';
-      const reset = started
-        ? (S.confirmReset === l.id
-          ? '<div class="reset-confirm" role="dialog" aria-label="Reset progress"><strong>Start this lesson over?</strong><span class="muted">Its progress will be cleared.</span>' +
-            '<div class="reset-actions"><button class="pill" data-act="reset-no">Cancel</button><button class="pill danger" data-act="reset-yes" data-id="' + esc(l.id) + '">Reset</button></div></div>'
-          : '<button class="reset-btn" data-act="reset-ask" data-id="' + esc(l.id) + '" aria-label="Reset progress for ' + esc(l.title.en) + '" title="Reset progress">' + icon('replay', 22, 2.4) + '</button>')
-        : '';
-      return '<div class="card-wrap"><a class="lesson-card" href="#' + esc(l.id) + '">' +
-        '<div class="tile" style="background:' + c[0] + ';color:' + c[1] + '">' + icon(l.icon, 84, 1.8) + '</div>' +
-        '<div class="body"><div><div class="ru">' + esc(l.title.ru) + '</div><div class="en">' + esc(l.title.en) + '</div></div>' + chips + '</div></a>' + reset + '</div>';
+    const groups = { todo: [], progress: [], done: [] };
+    S.lessons.forEach((l) => groups[lessonState(progress(l.id))].push(l));
+    const sections = [['todo', 'To Do', 'Начать'], ['progress', 'In Progress', 'Продолжить'], ['done', 'Done', 'Готово']].map(([key, en, ru]) => {
+      const list = groups[key];
+      if (!list.length) return '';
+      return '<section class="home-section" aria-label="' + en + '"><h2><span>' + ru + ' · ' + en + '</span><span class="count">' + list.length + '</span></h2>' +
+        '<div class="grid">' + list.map(lessonCard).join('') + '</div></section>';
     }).join('');
-    return '<div class="home"><header class="home-head"><div class="brand"><div class="brand-mark" aria-hidden="true">Аб</div><div><h1>Учим русский</h1><p>Pick a lesson to start</p></div></div></header>' +
-      voiceBanner() + '<div class="grid">' + cards + '</div></div>';
+    const total = S.lessons.length;
+    const doneCount = groups.done.length;
+    return '<div class="home"><header class="home-head"><div class="brand"><div class="brand-mark" aria-hidden="true">Аб</div><div><h1>Учим русский</h1><p>' +
+      (doneCount ? doneCount + ' of ' + total + ' lessons done' : 'Pick a lesson to start') + '</p></div></div></header>' +
+      voiceBanner() + sections + '</div>';
   }
 
   function viewTop() {
@@ -289,7 +309,7 @@
   function viewDone() {
     const total = S.lesson.quiz.length;
     const good = S.firstTry.filter(Boolean).length;
-    const stars = good === total ? 3 : good >= Math.ceil(total / 2) ? 2 : 1;
+    const stars = starsFor(good, total);
     return viewTop().replace('aria-current="step">3 · Quiz', 'aria-current="step">✓ Done') +
       '<div class="card finish"><div class="stars">' + STAR(stars >= 1) + STAR(stars >= 2) + STAR(stars >= 3) + '</div>' +
       '<h2>Урок пройден!</h2><p class="muted" style="font-size:20px;margin:0">Lesson complete — ' + good + ' of ' + total + ' right on the first try.</p>' +
@@ -419,7 +439,13 @@
       case 'next-q':
         tts.stop();
         if (S.q + 1 < l.quiz.length) { startQuestion(S.q + 1); render(); }
-        else { mark('quiz'); S.step = 'done'; render(); }
+        else {
+          mark('quiz');
+          const p = progress(l.id);
+          p.stars = Math.max(p.stars || 0, starsFor(S.firstTry.filter(Boolean).length, l.quiz.length));
+          store.set('progress:' + l.id, p);
+          S.step = 'done'; render();
+        }
         window.scrollTo(0, 0);
         break;
     }
