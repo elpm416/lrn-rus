@@ -92,19 +92,23 @@
       "options": [
         {
           "text": "играю",
-          "image": "play.svg"
+          "image": "play.svg",
+          "en": "I play"
         },
         {
           "text": "читаю",
-          "image": "read.svg"
+          "image": "read.svg",
+          "en": "I read"
         },
         {
           "text": "рисую",
-          "image": "draw.svg"
+          "image": "draw.svg",
+          "en": "I draw"
         },
         {
           "text": "бегаю",
-          "image": "run.svg"
+          "image": "run.svg",
+          "en": "I run"
         }
       ],
       "answer": 2
@@ -117,13 +121,16 @@
       },
       "options": [
         {
-          "text": "читаю"
+          "text": "читаю",
+          "en": "I read"
         },
         {
-          "text": "рисую"
+          "text": "рисую",
+          "en": "I draw"
         },
         {
-          "text": "бегаю"
+          "text": "бегаю",
+          "en": "I run"
         }
       ],
       "answer": 0
@@ -136,13 +143,16 @@
       },
       "options": [
         {
-          "text": "в парке"
+          "text": "в парке",
+          "en": "in the park"
         },
         {
-          "text": "в ванной"
+          "text": "в ванной",
+          "en": "in the bathroom"
         },
         {
-          "text": "в машине"
+          "text": "в машине",
+          "en": "in the car"
         }
       ],
       "answer": 0
@@ -155,13 +165,16 @@
       },
       "options": [
         {
-          "text": "кошку"
+          "text": "кошку",
+          "en": "a cat"
         },
         {
-          "text": "собаку"
+          "text": "собаку",
+          "en": "a dog"
         },
         {
-          "text": "дом"
+          "text": "дом",
+          "en": "a house"
         }
       ],
       "answer": 0
@@ -174,13 +187,16 @@
       },
       "options": [
         {
-          "text": "с мячиком"
+          "text": "с мячиком",
+          "en": "with a ball"
         },
         {
-          "text": "с куклой"
+          "text": "с куклой",
+          "en": "with a doll"
         },
         {
-          "text": "с машинкой"
+          "text": "с машинкой",
+          "en": "with a toy car"
         }
       ],
       "answer": 0

@@ -143,6 +143,10 @@
                 "image": {
                   "description": "Optional picture file inside this lesson's folder.",
                   "type": "string"
+                },
+                "en": {
+                  "description": "English translation, shown under the option.",
+                  "type": "string"
                 }
               },
               "additionalProperties": false

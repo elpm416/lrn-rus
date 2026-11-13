@@ -99,19 +99,23 @@
       "options": [
         {
           "text": "мама и папа",
-          "image": "opt-parents.svg"
+          "image": "opt-parents.svg",
+          "en": "Mom and Dad"
         },
         {
           "text": "бабушка",
-          "image": "opt-grandma.svg"
+          "image": "opt-grandma.svg",
+          "en": "Grandma"
         },
         {
           "text": "собака",
-          "image": "opt-dog.svg"
+          "image": "opt-dog.svg",
+          "en": "a dog"
         },
         {
           "text": "кошка",
-          "image": "opt-cat.svg"
+          "image": "opt-cat.svg",
+          "en": "a cat"
         }
       ],
       "answer": 0
@@ -124,13 +128,16 @@
       },
       "options": [
         {
-          "text": "рисую"
+          "text": "рисую",
+          "en": "I draw"
         },
         {
-          "text": "рисует"
+          "text": "рисует",
+          "en": "he draws"
         },
         {
-          "text": "рисуем"
+          "text": "рисуем",
+          "en": "we draw"
         }
       ],
       "answer": 0
@@ -143,13 +150,16 @@
       },
       "options": [
         {
-          "text": "читает"
+          "text": "читает",
+          "en": "he reads"
         },
         {
-          "text": "читаю"
+          "text": "читаю",
+          "en": "I read"
         },
         {
-          "text": "читаешь"
+          "text": "читаешь",
+          "en": "you read"
         }
       ],
       "answer": 0
@@ -162,13 +172,16 @@
       },
       "options": [
         {
-          "text": "бегаем"
+          "text": "бегаем",
+          "en": "we run"
         },
         {
-          "text": "бегают"
+          "text": "бегают",
+          "en": "they run"
         },
         {
-          "text": "бегаю"
+          "text": "бегаю",
+          "en": "I run"
         }
       ],
       "answer": 0
@@ -181,13 +194,16 @@
       },
       "options": [
         {
-          "text": "играешь"
+          "text": "играешь",
+          "en": "you play"
         },
         {
-          "text": "играю"
+          "text": "играю",
+          "en": "I play"
         },
         {
-          "text": "играет"
+          "text": "играет",
+          "en": "he plays"
         }
       ],
       "answer": 0

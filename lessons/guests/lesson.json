@@ -79,19 +79,23 @@
       "options": [
         {
           "text": "друзья",
-          "image": "opt-friends.svg"
+          "image": "opt-friends.svg",
+          "en": "friends"
         },
         {
           "text": "бабушка",
-          "image": "opt-grandma.svg"
+          "image": "opt-grandma.svg",
+          "en": "Grandma"
         },
         {
           "text": "кошка",
-          "image": "opt-cat.svg"
+          "image": "opt-cat.svg",
+          "en": "a cat"
         },
         {
           "text": "собака",
-          "image": "opt-dog.svg"
+          "image": "opt-dog.svg",
+          "en": "a dog"
         }
       ],
       "answer": 0
@@ -104,13 +108,16 @@
       },
       "options": [
         {
-          "text": "с друзьями"
+          "text": "с друзьями",
+          "en": "with friends"
         },
         {
-          "text": "с кошкой"
+          "text": "с кошкой",
+          "en": "with the cat"
         },
         {
-          "text": "с папой"
+          "text": "с папой",
+          "en": "with Dad"
         }
       ],
       "answer": 0
@@ -123,13 +130,16 @@
       },
       "options": [
         {
-          "text": "вкусную еду"
+          "text": "вкусную еду",
+          "en": "yummy food"
         },
         {
-          "text": "снег"
+          "text": "снег",
+          "en": "snow"
         },
         {
-          "text": "песок"
+          "text": "песок",
+          "en": "sand"
         }
       ],
       "answer": 0
@@ -142,10 +152,12 @@
       },
       "options": [
         {
-          "text": "вместе"
+          "text": "вместе",
+          "en": "together"
         },
         {
-          "text": "одни"
+          "text": "одни",
+          "en": "alone"
         }
       ],
       "answer": 0
@@ -158,13 +170,16 @@
       },
       "options": [
         {
-          "text": "весело"
+          "text": "весело",
+          "en": "fun"
         },
         {
-          "text": "скучно"
+          "text": "скучно",
+          "en": "boring"
         },
         {
-          "text": "грустно"
+          "text": "грустно",
+          "en": "sad"
         }
       ],
       "answer": 0

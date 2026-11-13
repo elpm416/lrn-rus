@@ -113,19 +113,23 @@
       "options": [
         {
           "text": "в футбол",
-          "image": "opt-soccer.svg"
+          "image": "opt-soccer.svg",
+          "en": "soccer"
         },
         {
           "text": "в хоккей",
-          "image": "opt-hockey.svg"
+          "image": "opt-hockey.svg",
+          "en": "hockey"
         },
         {
           "text": "в теннис",
-          "image": "opt-tennis.svg"
+          "image": "opt-tennis.svg",
+          "en": "tennis"
         },
         {
           "text": "в баскетбол",
-          "image": "opt-basketball.svg"
+          "image": "opt-basketball.svg",
+          "en": "basketball"
         }
       ],
       "answer": 0
@@ -138,13 +142,16 @@
       },
       "options": [
         {
-          "text": "в русскую школу"
+          "text": "в русскую школу",
+          "en": "to Russian school"
         },
         {
-          "text": "в зоопарк"
+          "text": "в зоопарк",
+          "en": "to the zoo"
         },
         {
-          "text": "в магазин"
+          "text": "в магазин",
+          "en": "to the store"
         }
       ],
       "answer": 0
@@ -157,13 +164,16 @@
       },
       "options": [
         {
-          "text": "у бабушки и дедушки"
+          "text": "у бабушки и дедушки",
+          "en": "at Grandma and Grandpa's"
         },
         {
-          "text": "в школе"
+          "text": "в школе",
+          "en": "at school"
         },
         {
-          "text": "в кафе"
+          "text": "в кафе",
+          "en": "at a café"
         }
       ],
       "answer": 0
@@ -176,13 +186,16 @@
       },
       "options": [
         {
-          "text": "с мамой и папой"
+          "text": "с мамой и папой",
+          "en": "with Mom and Dad"
         },
         {
-          "text": "с бабушкой"
+          "text": "с бабушкой",
+          "en": "with Grandma"
         },
         {
-          "text": "с друзьями"
+          "text": "с друзьями",
+          "en": "with friends"
         }
       ],
       "answer": 0
@@ -195,13 +208,16 @@
       },
       "options": [
         {
-          "text": "мы хотим быть сильными"
+          "text": "мы хотим быть сильными",
+          "en": "we want to be strong"
         },
         {
-          "text": "мы хотим спать"
+          "text": "мы хотим спать",
+          "en": "we want to sleep"
         },
         {
-          "text": "мы хотим есть"
+          "text": "мы хотим есть",
+          "en": "we want to eat"
         }
       ],
       "answer": 0

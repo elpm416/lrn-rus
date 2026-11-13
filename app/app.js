@@ -288,7 +288,7 @@
       if (S.picked === idx) cls = idx === q.answer ? ' right' : ' wrong';
       return '<button class="option' + cls + '" data-act="pick" data-o="' + idx + '"' + (right ? ' disabled' : '') + '>' +
         (o.image ? '<span class="img"><img src="' + esc(l.base + o.image) + '" alt=""></span>' : '') +
-        '<span class="txt">' + esc(plain(o.text)) + '</span>' +
+        '<span class="txt">' + esc(plain(o.text)) + '</span>' + (o.en ? '<span class="opt-en">' + esc(o.en) + '</span>' : '') +
         (S.picked === idx && right ? '<span class="tick" aria-hidden="true">' + icon('check', 20, 3.2) + '</span>' : '') + '</button>';
     }).join('');
     let fb = '<span class="muted" style="font-size:18px;font-weight:700">Tap the right answer.</span>';

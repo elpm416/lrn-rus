@@ -1,22 +1,61 @@
 {
   "$schema": "../lesson.schema.json",
   "id": "after-school",
-  "title": { "ru": "После школы", "en": "After school" },
+  "title": {
+    "ru": "После школы",
+    "en": "After school"
+  },
   "icon": "house",
   "color": "green",
   "images": {
-    "door": { "file": "door.svg", "alt": "A child with a backpack walking up to the front door of a house" },
-    "hallway": { "file": "hallway.svg", "alt": "A child in socks hanging up a jacket, shoes on the shoe rack" },
-    "sink": { "file": "sink.svg", "alt": "A child washing hands with soap at the sink" },
-    "kitchen": { "file": "kitchen.svg", "alt": "Mom, Dad and a child at the kitchen table talking about school" }
+    "door": {
+      "file": "door.svg",
+      "alt": "A child with a backpack walking up to the front door of a house"
+    },
+    "hallway": {
+      "file": "hallway.svg",
+      "alt": "A child in socks hanging up a jacket, shoes on the shoe rack"
+    },
+    "sink": {
+      "file": "sink.svg",
+      "alt": "A child washing hands with soap at the sink"
+    },
+    "kitchen": {
+      "file": "kitchen.svg",
+      "alt": "Mom, Dad and a child at the kitchen table talking about school"
+    }
   },
   "sentences": [
-    { "text": "Я при|хо|жу до|мой из шко|лы.", "en": "I come home from school.", "image": "door" },
-    { "text": "Сна|ча|ла я сни|ма|ю о|бувь.", "en": "First I take off my shoes.", "image": "hallway" },
-    { "text": "По|том я сни|ма|ю кур|тку и шап|ку.", "en": "Then I take off my jacket and hat.", "image": "hallway" },
-    { "text": "Я мо|ю ру|ки с мы|лом.", "en": "I wash my hands with soap.", "image": "sink" },
-    { "text": "Ма|ма и па|па спра|ши|ва|ют: «Как про|шёл твой день в шко|ле?»", "en": "Mom and Dad ask: \"How was your day at school?\"", "image": "kitchen" },
-    { "text": "Я рас|ска|зы|ва|ю ма|ме и па|пе про шко|лу.", "en": "I tell Mom and Dad about school.", "image": "kitchen" }
+    {
+      "text": "Я при|хо|жу до|мой из шко|лы.",
+      "en": "I come home from school.",
+      "image": "door"
+    },
+    {
+      "text": "Сна|ча|ла я сни|ма|ю о|бувь.",
+      "en": "First I take off my shoes.",
+      "image": "hallway"
+    },
+    {
+      "text": "По|том я сни|ма|ю кур|тку и шап|ку.",
+      "en": "Then I take off my jacket and hat.",
+      "image": "hallway"
+    },
+    {
+      "text": "Я мо|ю ру|ки с мы|лом.",
+      "en": "I wash my hands with soap.",
+      "image": "sink"
+    },
+    {
+      "text": "Ма|ма и па|па спра|ши|ва|ют: «Как про|шёл твой день в шко|ле?»",
+      "en": "Mom and Dad ask: \"How was your day at school?\"",
+      "image": "kitchen"
+    },
+    {
+      "text": "Я рас|ска|зы|ва|ю ма|ме и па|пе про шко|лу.",
+      "en": "I tell Mom and Dad about school.",
+      "image": "kitchen"
+    }
   ],
   "words": {
     "я": "I",
@@ -53,37 +92,120 @@
   "quiz": [
     {
       "type": "choice",
-      "prompt": { "ru": "Что я снимаю сначала?", "en": "What do I take off first?" },
+      "prompt": {
+        "ru": "Что я снимаю сначала?",
+        "en": "What do I take off first?"
+      },
       "options": [
-        { "text": "обувь", "image": "opt-shoes.svg" },
-        { "text": "куртку", "image": "opt-jacket.svg" },
-        { "text": "шапку", "image": "opt-hat.svg" },
-        { "text": "варежки", "image": "opt-mittens.svg" }
+        {
+          "text": "обувь",
+          "image": "opt-shoes.svg",
+          "en": "shoes"
+        },
+        {
+          "text": "куртку",
+          "image": "opt-jacket.svg",
+          "en": "jacket"
+        },
+        {
+          "text": "шапку",
+          "image": "opt-hat.svg",
+          "en": "hat"
+        },
+        {
+          "text": "варежки",
+          "image": "opt-mittens.svg",
+          "en": "mittens"
+        }
       ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": { "ru": "Откуда я прихожу домой?", "en": "Where do I come home from?" },
-      "options": [{ "text": "из школы" }, { "text": "из магазина" }, { "text": "из парка" }],
+      "prompt": {
+        "ru": "Откуда я прихожу домой?",
+        "en": "Where do I come home from?"
+      },
+      "options": [
+        {
+          "text": "из школы",
+          "en": "from school"
+        },
+        {
+          "text": "из магазина",
+          "en": "from the store"
+        },
+        {
+          "text": "из парка",
+          "en": "from the park"
+        }
+      ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": { "ru": "Чем я мою руки?", "en": "What do I wash my hands with?" },
-      "options": [{ "text": "с мылом" }, { "text": "с молоком" }, { "text": "с песком" }],
+      "prompt": {
+        "ru": "Чем я мою руки?",
+        "en": "What do I wash my hands with?"
+      },
+      "options": [
+        {
+          "text": "с мылом",
+          "en": "with soap"
+        },
+        {
+          "text": "с молоком",
+          "en": "with milk"
+        },
+        {
+          "text": "с песком",
+          "en": "with sand"
+        }
+      ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": { "ru": "Что спрашивают мама и папа?", "en": "What do Mom and Dad ask?" },
-      "options": [{ "text": "«Как прошёл твой день в школе?»" }, { "text": "«Где кошка?»" }, { "text": "«Который час?»" }],
+      "prompt": {
+        "ru": "Что спрашивают мама и папа?",
+        "en": "What do Mom and Dad ask?"
+      },
+      "options": [
+        {
+          "text": "«Как прошёл твой день в школе?»",
+          "en": "\"How was your day at school?\""
+        },
+        {
+          "text": "«Где кошка?»",
+          "en": "\"Where's the cat?\""
+        },
+        {
+          "text": "«Который час?»",
+          "en": "\"What time is it?\""
+        }
+      ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": { "ru": "Кому я рассказываю про школу?", "en": "Who do I tell about school?" },
-      "options": [{ "text": "маме и папе" }, { "text": "собаке" }, { "text": "учителю" }],
+      "prompt": {
+        "ru": "Кому я рассказываю про школу?",
+        "en": "Who do I tell about school?"
+      },
+      "options": [
+        {
+          "text": "маме и папе",
+          "en": "Mom and Dad"
+        },
+        {
+          "text": "собаке",
+          "en": "the dog"
+        },
+        {
+          "text": "учителю",
+          "en": "the teacher"
+        }
+      ],
       "answer": 0
     }
   ]

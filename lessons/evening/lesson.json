@@ -98,19 +98,23 @@
       "options": [
         {
           "text": "на дзюдо",
-          "image": "opt-judo.svg"
+          "image": "opt-judo.svg",
+          "en": "to judo"
         },
         {
           "text": "на футбол",
-          "image": "opt-soccer.svg"
+          "image": "opt-soccer.svg",
+          "en": "to soccer"
         },
         {
           "text": "в бассейн",
-          "image": "opt-pool.svg"
+          "image": "opt-pool.svg",
+          "en": "to the pool"
         },
         {
           "text": "в магазин",
-          "image": "opt-shop.svg"
+          "image": "opt-shop.svg",
+          "en": "to the store"
         }
       ],
       "answer": 0
@@ -123,13 +127,16 @@
       },
       "options": [
         {
-          "text": "делаю уроки"
+          "text": "делаю уроки",
+          "en": "do homework"
         },
         {
-          "text": "смотрю телевизор"
+          "text": "смотрю телевизор",
+          "en": "watch TV"
         },
         {
-          "text": "сплю"
+          "text": "сплю",
+          "en": "sleep"
         }
       ],
       "answer": 0
@@ -142,13 +149,16 @@
       },
       "options": [
         {
-          "text": "перекусываю"
+          "text": "перекусываю",
+          "en": "have a snack"
         },
         {
-          "text": "делаю уроки"
+          "text": "делаю уроки",
+          "en": "do homework"
         },
         {
-          "text": "иду гулять"
+          "text": "иду гулять",
+          "en": "go for a walk"
         }
       ],
       "answer": 0
@@ -161,13 +171,16 @@
       },
       "options": [
         {
-          "text": "чищу зубы"
+          "text": "чищу зубы",
+          "en": "brush my teeth"
         },
         {
-          "text": "играю в футбол"
+          "text": "играю в футбол",
+          "en": "play soccer"
         },
         {
-          "text": "ем торт"
+          "text": "ем торт",
+          "en": "eat cake"
         }
       ],
       "answer": 0
@@ -180,13 +193,16 @@
       },
       "options": [
         {
-          "text": "«Спокойной ночи!»"
+          "text": "«Спокойной ночи!»",
+          "en": "\"Good night!\""
         },
         {
-          "text": "«Доброе утро!»"
+          "text": "«Доброе утро!»",
+          "en": "\"Good morning!\""
         },
         {
-          "text": "«Привет!»"
+          "text": "«Привет!»",
+          "en": "\"Hi!\""
         }
       ],
       "answer": 0

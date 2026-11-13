@@ -104,19 +104,23 @@
       "options": [
         {
           "text": "кошку",
-          "image": "opt-cat.svg"
+          "image": "opt-cat.svg",
+          "en": "a cat"
         },
         {
           "text": "собаку",
-          "image": "opt-dog.svg"
+          "image": "opt-dog.svg",
+          "en": "a dog"
         },
         {
           "text": "дом",
-          "image": "opt-house.svg"
+          "image": "opt-house.svg",
+          "en": "a house"
         },
         {
           "text": "машину",
-          "image": "opt-car.svg"
+          "image": "opt-car.svg",
+          "en": "a car"
         }
       ],
       "answer": 0
@@ -129,13 +133,16 @@
       },
       "options": [
         {
-          "text": "читал"
+          "text": "читал",
+          "en": "I read (yesterday)"
         },
         {
-          "text": "читаю"
+          "text": "читаю",
+          "en": "I read (now)"
         },
         {
-          "text": "читает"
+          "text": "читает",
+          "en": "he reads"
         }
       ],
       "answer": 0
@@ -148,13 +155,16 @@
       },
       "options": [
         {
-          "text": "рисую"
+          "text": "рисую",
+          "en": "I draw (now)"
         },
         {
-          "text": "рисовал"
+          "text": "рисовал",
+          "en": "I drew"
         },
         {
-          "text": "рисует"
+          "text": "рисует",
+          "en": "he draws"
         }
       ],
       "answer": 0
@@ -167,13 +177,16 @@
       },
       "options": [
         {
-          "text": "бегали"
+          "text": "бегали",
+          "en": "we ran"
         },
         {
-          "text": "бегаем"
+          "text": "бегаем",
+          "en": "we run (now)"
         },
         {
-          "text": "бегал"
+          "text": "бегал",
+          "en": "he ran"
         }
       ],
       "answer": 0
@@ -186,13 +199,16 @@
       },
       "options": [
         {
-          "text": "вчера"
+          "text": "вчера",
+          "en": "yesterday"
         },
         {
-          "text": "завтра"
+          "text": "завтра",
+          "en": "tomorrow"
         },
         {
-          "text": "никогда"
+          "text": "никогда",
+          "en": "never"
         }
       ],
       "answer": 0
