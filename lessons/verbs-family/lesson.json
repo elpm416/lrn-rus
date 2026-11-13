@@ -1,0 +1,196 @@
+{
+  "$schema": "../lesson.schema.json",
+  "id": "verbs-family",
+  "title": {
+    "ru": "Вся семья",
+    "en": "The whole family"
+  },
+  "icon": "users",
+  "color": "blue",
+  "images": {
+    "read": {
+      "file": "read-together.svg",
+      "alt": "Two brothers reading books on the sofa"
+    },
+    "draw": {
+      "file": "draw-together.svg",
+      "alt": "Two brothers drawing at the table"
+    },
+    "parents": {
+      "file": "parents-run.svg",
+      "alt": "Mom and Dad running in the park"
+    },
+    "kids": {
+      "file": "kids-run.svg",
+      "alt": "Two brothers running in the park"
+    },
+    "invite": {
+      "file": "invite.svg",
+      "alt": "A child holding out a ball, asking a question"
+    },
+    "together": {
+      "file": "play-together.svg",
+      "alt": "The whole family playing with a ball"
+    }
+  },
+  "sentences": [
+    {
+      "text": "Я чи|та|ю, и брат чи|та|ет.",
+      "en": "I read, and my brother reads.",
+      "image": "read"
+    },
+    {
+      "text": "Я ри|су|ю, и брат ри|су|ет.",
+      "en": "I draw, and my brother draws.",
+      "image": "draw"
+    },
+    {
+      "text": "Ма|ма и па|па бе|га|ют в пар|ке.",
+      "en": "Mom and Dad run in the park.",
+      "image": "parents"
+    },
+    {
+      "text": "Мы то|же бе|га|ем!",
+      "en": "We run too!",
+      "image": "kids"
+    },
+    {
+      "text": "Ты и|гра|ешь с на|ми?",
+      "en": "Are you playing with us?",
+      "image": "invite"
+    },
+    {
+      "text": "Да, мы и|гра|ем вме|сте!",
+      "en": "Yes, we play together!",
+      "image": "together"
+    }
+  ],
+  "words": {
+    "я": "I",
+    "читаю": "I read",
+    "и": "and",
+    "брат": "brother",
+    "читает": "he reads",
+    "рисую": "I draw",
+    "рисует": "he draws",
+    "мама": "Mom",
+    "папа": "Dad",
+    "бегают": "they run",
+    "в": "in",
+    "парке": "park",
+    "мы": "we",
+    "тоже": "too",
+    "бегаем": "we run",
+    "ты": "you",
+    "играешь": "you play",
+    "с": "with",
+    "нами": "us",
+    "да": "yes",
+    "играем": "we play",
+    "вместе": "together"
+  },
+  "quiz": [
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Кто бегает в парке?",
+        "en": "Who runs in the park?"
+      },
+      "options": [
+        {
+          "text": "мама и папа",
+          "image": "opt-parents.svg"
+        },
+        {
+          "text": "бабушка",
+          "image": "opt-grandma.svg"
+        },
+        {
+          "text": "собака",
+          "image": "opt-dog.svg"
+        },
+        {
+          "text": "кошка",
+          "image": "opt-cat.svg"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Я ___.",
+        "en": "I draw."
+      },
+      "options": [
+        {
+          "text": "рисую"
+        },
+        {
+          "text": "рисует"
+        },
+        {
+          "text": "рисуем"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Брат ___.",
+        "en": "My brother reads."
+      },
+      "options": [
+        {
+          "text": "читает"
+        },
+        {
+          "text": "читаю"
+        },
+        {
+          "text": "читаешь"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Мы тоже ___!",
+        "en": "We run too!"
+      },
+      "options": [
+        {
+          "text": "бегаем"
+        },
+        {
+          "text": "бегают"
+        },
+        {
+          "text": "бегаю"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Ты ___ с нами?",
+        "en": "Are you playing with us?"
+      },
+      "options": [
+        {
+          "text": "играешь"
+        },
+        {
+          "text": "играю"
+        },
+        {
+          "text": "играет"
+        }
+      ],
+      "answer": 0
+    }
+  ]
+}

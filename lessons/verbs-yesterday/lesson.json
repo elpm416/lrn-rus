@@ -1,0 +1,201 @@
+{
+  "$schema": "../lesson.schema.json",
+  "id": "verbs-yesterday",
+  "title": {
+    "ru": "Вчера и сегодня",
+    "en": "Yesterday and today"
+  },
+  "icon": "calendar",
+  "color": "yellow",
+  "images": {
+    "play": {
+      "file": "play.svg",
+      "alt": "A child playing with a ball in the park"
+    },
+    "read": {
+      "file": "read.svg",
+      "alt": "A child reading a book on the sofa"
+    },
+    "cat": {
+      "file": "draw-cat.svg",
+      "alt": "A child drawing a cat"
+    },
+    "dog": {
+      "file": "draw-dog.svg",
+      "alt": "A child drawing a dog"
+    },
+    "run": {
+      "file": "run.svg",
+      "alt": "Two brothers running in the park"
+    }
+  },
+  "sentences": [
+    {
+      "text": "Вче|ра я и|грал с мя|чи|ком.",
+      "en": "Yesterday I played with a ball.",
+      "image": "play"
+    },
+    {
+      "text": "Се|год|ня я то|же и|гра|ю.",
+      "en": "Today I'm playing too.",
+      "image": "play"
+    },
+    {
+      "text": "Вче|ра я чи|тал кни|гу.",
+      "en": "Yesterday I read a book.",
+      "image": "read"
+    },
+    {
+      "text": "Се|год|ня я сно|ва чи|та|ю.",
+      "en": "Today I'm reading again.",
+      "image": "read"
+    },
+    {
+      "text": "Вче|ра я ри|со|вал кош|ку.",
+      "en": "Yesterday I drew a cat.",
+      "image": "cat"
+    },
+    {
+      "text": "Се|год|ня я ри|су|ю со|ба|ку.",
+      "en": "Today I'm drawing a dog.",
+      "image": "dog"
+    },
+    {
+      "text": "Вче|ра мы бе|га|ли в пар|ке.",
+      "en": "Yesterday we ran in the park.",
+      "image": "run"
+    },
+    {
+      "text": "Се|год|ня мы то|же бе|га|ем!",
+      "en": "Today we're running too!",
+      "image": "run"
+    }
+  ],
+  "words": {
+    "вчера": "yesterday",
+    "я": "I",
+    "играл": "I played",
+    "с": "with",
+    "мячиком": "a ball",
+    "сегодня": "today",
+    "тоже": "too",
+    "играю": "I play",
+    "читал": "I read (yesterday)",
+    "книгу": "a book",
+    "снова": "again",
+    "читаю": "I read (now)",
+    "рисовал": "I drew",
+    "кошку": "a cat",
+    "рисую": "I draw",
+    "собаку": "a dog",
+    "мы": "we",
+    "бегали": "we ran",
+    "в": "in",
+    "парке": "park",
+    "бегаем": "we run"
+  },
+  "quiz": [
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Что я рисовал вчера?",
+        "en": "What did I draw yesterday?"
+      },
+      "options": [
+        {
+          "text": "кошку",
+          "image": "opt-cat.svg"
+        },
+        {
+          "text": "собаку",
+          "image": "opt-dog.svg"
+        },
+        {
+          "text": "дом",
+          "image": "opt-house.svg"
+        },
+        {
+          "text": "машину",
+          "image": "opt-car.svg"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Вчера я ___ книгу.",
+        "en": "Yesterday I read a book."
+      },
+      "options": [
+        {
+          "text": "читал"
+        },
+        {
+          "text": "читаю"
+        },
+        {
+          "text": "читает"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Сегодня я ___ собаку.",
+        "en": "Today I'm drawing a dog."
+      },
+      "options": [
+        {
+          "text": "рисую"
+        },
+        {
+          "text": "рисовал"
+        },
+        {
+          "text": "рисует"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Вчера мы ___ в парке.",
+        "en": "Yesterday we ran in the park."
+      },
+      "options": [
+        {
+          "text": "бегали"
+        },
+        {
+          "text": "бегаем"
+        },
+        {
+          "text": "бегал"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Когда я играл с мячиком?",
+        "en": "When did I play with the ball?"
+      },
+      "options": [
+        {
+          "text": "вчера"
+        },
+        {
+          "text": "завтра"
+        },
+        {
+          "text": "никогда"
+        }
+      ],
+      "answer": 0
+    }
+  ]
+}

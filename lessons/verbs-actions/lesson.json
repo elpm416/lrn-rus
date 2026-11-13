@@ -1,0 +1,189 @@
+{
+  "$schema": "../lesson.schema.json",
+  "id": "verbs-actions",
+  "title": {
+    "ru": "Что я делаю?",
+    "en": "What do I do?"
+  },
+  "icon": "ball",
+  "color": "orange",
+  "images": {
+    "think": {
+      "file": "think.svg",
+      "alt": "A child thinking, a big question mark above"
+    },
+    "play": {
+      "file": "play.svg",
+      "alt": "A child playing with a ball in the park"
+    },
+    "read": {
+      "file": "read.svg",
+      "alt": "A child reading a book on the sofa"
+    },
+    "draw": {
+      "file": "draw.svg",
+      "alt": "A child drawing a cat at the table"
+    },
+    "run": {
+      "file": "run.svg",
+      "alt": "A child running in the park"
+    },
+    "cheer": {
+      "file": "cheer.svg",
+      "alt": "A happy child with a ball, a book and a pencil"
+    }
+  },
+  "sentences": [
+    {
+      "text": "Что я де|ла|ю?",
+      "en": "What do I do?",
+      "image": "think"
+    },
+    {
+      "text": "Я и|гра|ю с мя|чи|ком.",
+      "en": "I play with a ball.",
+      "image": "play"
+    },
+    {
+      "text": "Я чи|та|ю кни|гу.",
+      "en": "I read a book.",
+      "image": "read"
+    },
+    {
+      "text": "Я ри|су|ю кош|ку.",
+      "en": "I draw a cat.",
+      "image": "draw"
+    },
+    {
+      "text": "Я бе|га|ю в пар|ке.",
+      "en": "I run in the park.",
+      "image": "run"
+    },
+    {
+      "text": "Я всё у|ме|ю!",
+      "en": "I can do it all!",
+      "image": "cheer"
+    }
+  ],
+  "words": {
+    "что": "what",
+    "я": "I",
+    "делаю": "I do",
+    "играю": "I play",
+    "с": "with",
+    "мячиком": "a ball",
+    "читаю": "I read",
+    "книгу": "a book",
+    "рисую": "I draw",
+    "кошку": "a cat",
+    "бегаю": "I run",
+    "в": "in",
+    "парке": "park",
+    "всё": "everything",
+    "умею": "I can, I know how"
+  },
+  "quiz": [
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Что я делаю с карандашом?",
+        "en": "What do I do with a pencil?"
+      },
+      "options": [
+        {
+          "text": "играю",
+          "image": "play.svg"
+        },
+        {
+          "text": "читаю",
+          "image": "read.svg"
+        },
+        {
+          "text": "рисую",
+          "image": "draw.svg"
+        },
+        {
+          "text": "бегаю",
+          "image": "run.svg"
+        }
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Что я делаю с книгой?",
+        "en": "What do I do with a book?"
+      },
+      "options": [
+        {
+          "text": "читаю"
+        },
+        {
+          "text": "рисую"
+        },
+        {
+          "text": "бегаю"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Где я бегаю?",
+        "en": "Where do I run?"
+      },
+      "options": [
+        {
+          "text": "в парке"
+        },
+        {
+          "text": "в ванной"
+        },
+        {
+          "text": "в машине"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "Что я рисую?",
+        "en": "What do I draw?"
+      },
+      "options": [
+        {
+          "text": "кошку"
+        },
+        {
+          "text": "собаку"
+        },
+        {
+          "text": "дом"
+        }
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": {
+        "ru": "С чем я играю?",
+        "en": "What do I play with?"
+      },
+      "options": [
+        {
+          "text": "с мячиком"
+        },
+        {
+          "text": "с куклой"
+        },
+        {
+          "text": "с машинкой"
+        }
+      ],
+      "answer": 0
+    }
+  ]
+}
